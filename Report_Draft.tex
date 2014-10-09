@@ -20,7 +20,7 @@
 \date{\today}
 
 \begin{abstract}
-{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. The Verdet constant relates the change in the magnetic field to a change in the polarization.  Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. A lock-in amplifier was used on the photodiode output to reduce noise from background light and DC drift from the photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.88 \pm 0.11 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m} $from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
+{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. The Verdet constant relates the change in the magnetic field to a change in the polarization.  Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. A lock-in amplifier was used on the photodiode output to reduce noise from background light and DC drift from the photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.88 \pm 1.20 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m} $from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
 
 }
 \end{abstract}
@@ -36,13 +36,13 @@ b.  To calculate the Verdet constant relating the change in polarization angle t
 
 \section{Introduction} 
 
-{The Faraday Effect is a magneto-optical phenomenon in which light of a single wavelength, traveling through certain materials subject to a magnetic field, experiences a shift in the plane of polarization. These materials, called birefringent, have different refractive indices for the right and left circular polarizations of light. As light travels through the material, the relative phase angle between the two polarizations changes, rotating the overall polarization plane.
+{The Faraday Effect is a magneto-optical phenomenon in which light of a single wavelength, traveling through certain materials subject to a magnetic field, experiences a shift in the plane of polarization. These materials, called birefringent, have different refractive indices for the right and left circular polarizations of light. As light travels through the material, the relative phase angle between the two polarizations changes, rotating the overall polarization plane \cite{melissinos}.
 
-As shown in Equation 1, the Verdet Constant ($V_{c}$) relates the change in magnetic field of a medium to the change in polarization angle of the traveling light.  $V_{c}$ is specific to any medium.  There are two ways in which we can calculate $V_{c}$.  By Malus's Law, $I(\theta)$=$I_{0}*\cos^{2}(\theta)$, where $I$ is the intensity of measured light through a polarization filter of angle $\theta$ with respect to the maximal polarization angle.  Similarly, for voltage output, $V(\theta)$=$V_{0}*\cos^{2}(\theta)$.  Once we add into this set-up a magnetic field through which the light can travel, we will observe the voltage output equation to have a phase shift, $\theta$:  $V(\theta)$=$V_{0}*\cos^{2}(\theta+\phi)$.
+As shown in Equation 1, the Verdet Constant ($V_{c}$) relates the change in magnetic field of a medium to the change in polarization angle of the traveling light\cite{expphysics}.  $V_{c}$ is specific to any medium.  There are two ways in which we can calculate $V_{c}$.  By Malus's Law, $I(\theta)$=$I_{0}*\cos^{2}(\theta)$, where $I$ is the intensity of measured light through a polarization filter of angle $\theta$ with respect to the maximal polarization angle.  Similarly, for voltage output, $V(\theta)$=$V_{0}*\cos^{2}(\theta)$.  Once we add into this set-up a magnetic field through which the light can travel, we will observe the voltage output equation to have a phase shift, $\theta$:  $V(\theta)$=$V_{0}*\cos^{2}(\theta+\phi)$.
 }
 
 \section{Procedure}
-{Polarized light came from a 650 nm laser, driven by a 400 kHZ square wave from a function generator. A 15.2 cm long solenoid with 1400 turns and a DC resistance of 1.6 $\Omega$ was the source of our magnetic field. The solenoid was connected to a Keithley 2230-30-1 DC Power Supply. Channel 1 and Channel 2 were connected in parallel to provide sufficient current. The calibration of the solenoid was found by measuring the magnetic field at the center of the solenoid for a current of 0 A to 2.25 A in steps of 0.25 A. The calibration constant was calculated to be $10.6 \textrm{~mT/A} \pm 0.05 \text{~mT}$. A 10.2 $\pm$ 0.5 cm SF-59 glass rod, was centered inside the solenoid. SF-59 glass is a heavy flint glass of refractive index 1.95.  The light is passed through a polarizer and detected by a photodiode, connected to a 1 k$\Omega$ resistor. The photodiode outputs a voltage signal proportional to the detected light intensity.
+{Polarized light came from a 650 nm laser, driven by a 400 kHZ square wave from a function generator. A 15.2 cm long solenoid with 1400 turns and a DC resistance of 1.6 $\Omega$ was the source of our magnetic field. The solenoid was connected to a Keithley 2230-30-1 DC Power Supply. Channel 1 and Channel 2 were connected in parallel to provide sufficient current. The calibration of the solenoid was found by measuring the magnetic field at the center of the solenoid for a current of 0 A to 2.25 A in steps of 0.25 A. The calibration constant was calculated to be $10.6 \textrm{~mT/A} \pm 0.05 \text{~mT}$. A 10.2 $\pm$ 0.5 cm SF-59 glass rod, was centered inside the solenoid. SF-59 glass is a heavy flint glass of refractive index 1.95 \cite{optics}.  The light is passed through a polarizer and detected by a photodiode, connected to a 1 k$\Omega$ resistor. The photodiode outputs a voltage signal proportional to the detected light intensity\cite{teachspin}.
 
 A lock-in amplifier was used so undesirable noise such as light from the environment and drift from the photodiode, can be removed from the signal. The output of the photodiode was connected to a band pass filter with a center frequency of 400 kHz and a Q of 20. This extracted the first harmonic of the square wave, a 400 kHz sine wave. The output of of the filter was connected to a lock-in amplifier of gain 5. The reference signal for the lock-in amplifier was a 400 kHz sine wave with the same phase as the square wave driving the laser. It was generated by the same function generator for the square wave. The voltage output signal from the lock-in was measured by a Keithley 2100 Digital Multimeter.
 
@@ -75,7 +75,7 @@ V_{c} =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta}
 
 \subsection{Method 2}
 
-Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
+Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship \cite{expphysics}- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
 \begin{equation}
 V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B} 
 \end{equation}
@@ -93,16 +93,24 @@ V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B}
 We now explore possible causes of this systematic error.  Angle values in the 305\degree--340\degree range were more difficult to set on the Faraday Rotator as they were partially obstructed by the solenoid.  Using the human eye to set these values and attempting to look beyond the solenoid may have resulted in a systematic error in the angle setting due to parallax.  What looked like 305\degree might have actually been 303\degree--307\degree due to this parallax effect.  (~another reason?~).  We masked data values in this range in order to eliminate data values rendered invalid due to systematic error but perhaps we might have included several points which appeared fine but were also subject to systematic error.  Perhaps we should have thrown out all points beyond the 305 \degree mark as they might have all been intrinsically shifted from the sinusoidal curve they should have followed.  Including incorrect data points in the fit which generated our phase offset which was critical for the calculation in Method 2 would have resulted in a systematically incorrect offset and thus incorrect value for the Verdet Constant.
 
 Method 1 involved parameters which did not depend on the accuracy of the phase offset and sinusoidal fit and thus our systematic error did not affect the calculations from Method 1.  Our Verdet Constant from Method 1 is thus the one to be reported as accurate.  It was in agreement with the values reported by our colleagues, as mentioned earlier.
-\section{Conclusion}
 
+\section{Conclusion}
+{a.  We were able to demonstrate Faraday Rotation for 3 different values of magnetic field.  As can be seen from the graphs, each plot of rotation angle vs. voltage has a different offset from the graph of rotation angle vs. voltage for a zero-field case.  We can conclude that the overall plane of polarization for incident light has been rotated due to its travel through a magnetic field.
+b.  We calculated the Verdet Constant using two different methods of calculation.  The first method gave us a constant of $19.88 \pm 1.2 \mathrm{~rad/T} \cdot \textrm{m}$, which is in good agreement with the values our colleagues calculated.  The second method was likely affected by a systematic error in our data recording and ended up being $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$, not within agreement of the values calculated by our colleagues.
 
 \section{References}
 
-{The Properties of Optical Glass.  Hans Back and Norbert Neuroth.  Springer Science $\&$ Business Media, 1998.
+\begin{thebibliography}{4}
 
-Experiments in Modern Physics.  Adrian Constantin Melissinos and Jim Napolitano.  Gulf Professional Publishing, 2003
+\bibitem{optics} The Properties of Optical Glass.  Hans Back and Norbert Neuroth.  Springer Science $\&$ Business Media, 1998.
 
-Faraday Rotation:  Instructor's Guide to TeachSpin's FR1-A Apparatus.  Jonathan F. Reichert.}
+\bibitem{melissinos} Experiments in Modern Physics.  Adrian Constantin Melissinos and Jim Napolitano.  Gulf Professional Publishing, 2003
+
+\bibitem{teachspin}Instructor's Guide to TeachSpin's FR1-A Apparatus.  Jonathan F. Reichert
+
+\bibitem{expphysics}The Art of Experimental Physics.  Daryn W. Preston and Eric R. Dietz.  John Wiley  $\&$ Sons, Inc, 1991.
+
+\end{thebibliography}
 
 \begin{figure}
 \includegraphics[width = 6.3in]{0A.pdf}
