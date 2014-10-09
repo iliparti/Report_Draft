@@ -20,7 +20,7 @@
 \date{\today}
 
 \begin{abstract}
-{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. The Verdet constant relates the change in the magnetic field to a change in the polarization.  Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. A lock-in amplifier was used on the photodiode output to reduce noise from background light and DC drift from the photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.88 \pm 1.20 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m} $from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
+{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.88 \pm 1.20 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m} $from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
 
 }
 \end{abstract}
@@ -29,39 +29,69 @@
 \section{Aims}
 {a.  To demonstrate the Faraday effect of the rotation of the plane of polarization of light as it travels through magnetic fields of different magnitudes.
 
-b.  To calculate the Verdet constant relating the change in polarization angle to the change in magnetic field.}
+b.  To calculate the Verdet constant ($V_{c}$) relating the change in polarization angle to the change in magnetic field.}
 \begin{equation}
+\label{vconst}
 \Delta \phi =V_{c}\hspace{1.5pt} \Delta B\hspace{1pt}\textrm{L}{_{\textrm{sample}}}
 \end{equation}
 
 \section{Introduction} 
 
-{The Faraday Effect is a magneto-optical phenomenon in which light of a single wavelength, traveling through certain materials subject to a magnetic field, experiences a shift in the plane of polarization. These materials, called birefringent, have different refractive indices for the right and left circular polarizations of light. As light travels through the material, the relative phase angle between the two polarizations changes, rotating the overall polarization plane \cite{melissinos}.
+{The Faraday effect is a magneto-optical phenomenon in which light of a single wavelength, traveling through certain materials subject to a magnetic field, experiences a shift in the plane of polarization. These materials, called birefringent, have different refractive indices for the right and left circular polarizations of light. As light travels through the material, the relative phase angle between the two polarizations changes, rotating the overall polarization plane \cite{melissinos}.
 
-As shown in Equation 1, the Verdet Constant ($V_{c}$) relates the change in magnetic field of a medium to the change in polarization angle of the traveling light\cite{expphysics}.  $V_{c}$ is specific to any medium.  There are two ways in which we can calculate $V_{c}$.  By Malus's Law, $I(\theta)$=$I_{0}*\cos^{2}(\theta)$, where $I$ is the intensity of measured light through a polarization filter of angle $\theta$ with respect to the maximal polarization angle.  Similarly, for voltage output, $V(\theta)$=$V_{0}*\cos^{2}(\theta)$.  Once we add into this set-up a magnetic field through which the light can travel, we will observe the voltage output equation to have a phase shift, $\theta$:  $V(\theta)$=$V_{0}*\cos^{2}(\theta+\phi)$.
+
+As shown in Eq.~(\ref{vconst}) , $V_{c}$ is a constant of proportionality that relates the change in polarization angle to the change in the magnetic field.\cite{expphysics} The value of $V_{c}$ depends on the medium and the wavelength of the light. The intensity of the light is given by $I=I_{0}\cos^{2}(\theta)$, where $\theta$ is the polarization angle with respect to the angle of  maximum intensity. When light experiences the Faraday effect, there will be a shift in the polarization so the intensity will be given by $I=I_{0}*\cos^{2}(\theta+\phi)$ instead.
 }
 
 \section{Procedure}
-{Polarized light came from a 650 nm laser, driven by a 400 kHZ square wave from a function generator. A 15.2 cm long solenoid with 1400 turns and a DC resistance of 1.6 $\Omega$ was the source of our magnetic field. The solenoid was connected to a Keithley 2230-30-1 DC Power Supply. Channel 1 and Channel 2 were connected in parallel to provide sufficient current. The calibration of the solenoid was found by measuring the magnetic field at the center of the solenoid for a current of 0 A to 2.25 A in steps of 0.25 A. The calibration constant was calculated to be $10.6 \textrm{~mT/A} \pm 0.05 \text{~mT}$. A 10.2 $\pm$ 0.5 cm SF-59 glass rod, was centered inside the solenoid. SF-59 glass is a heavy flint glass of refractive index 1.95 \cite{optics}.  The light is passed through a polarizer and detected by a photodiode, connected to a 1 k$\Omega$ resistor. The photodiode outputs a voltage signal proportional to the detected light intensity\cite{teachspin}.
+{Polarized light came from a 650 nm laser, driven by a 400 kHZ square wave from a function generator. A 15.2 cm long solenoid with 1400 turns and a DC resistance of 1.6 $\Omega$ was the source of our magnetic field. The current for the solenoid was provided by a Keithley 2230-30-1 DC Power Supply. Channel 1 and Channel 2 were connected in parallel to provide sufficient current. The calibration of the solenoid was found by measuring the magnetic field at the center of the solenoid for a current of 0 A to 2.25 A in steps of 0.25 A. The calibration constant was calculated to be $10.6 \textrm{~mT/A} \pm 0.05 \text{~mT}$. A 10.2 $\pm$ 0.5 cm SF-59 glass rod, was centered inside the solenoid. SF-59 glass is a heavy flint glass of refractive index 1.95 \cite{optics}.  The light is passed through a polarizer and detected by a photodiode, with the setting at 1 k$\Omega$. The photodiode outputs a voltage signal proportional to the detected light intensity\cite{teachspin}. A diagram of the experimental setup is shown in Fig.~\ref{setup}.
 
-A lock-in amplifier was used so undesirable noise such as light from the environment and drift from the photodiode, can be removed from the signal. The output of the photodiode was connected to a band pass filter with a center frequency of 400 kHz and a Q of 20. This extracted the first harmonic of the square wave, a 400 kHz sine wave. The output of of the filter was connected to a lock-in amplifier of gain 5. The reference signal for the lock-in amplifier was a 400 kHz sine wave with the same phase as the square wave driving the laser. It was generated by the same function generator for the square wave. The voltage output signal from the lock-in was measured by a Keithley 2100 Digital Multimeter.
-
-Voltage readings from the multimeter were recorded onto the computer by LabView program (Keithley DC Incremental Write.vi). Each recorded voltage was an average of 16 measurements. Voltages were recorded for a 360\degree\ rotation of the polarizer at increments of 5\degree. We used this procedure to measure the voltage output for a magnetic field of -10.6 mT, 0 mT, 15.9 mT, and 21.2 mT. The negative field was generated by reversing the connection of the two leads of the power supply to the solenoid. We also measured  $\frac{\partial V}{\partial B}$ at $45\degree$ relative to the maximum for magnetic fields from $-31.8$--$31.8$ mT, in increments of $5.3$ mT.
-}
-\begin{figure}[b]
-\includegraphics[width = 6.3in]{ExperimentalSetup}
+\begin{figure}
+\includegraphics[width = 4.3in]{ExperimentalSetup}
 \caption{\label{setup}A flow diagram of our experimental setup}
 \end{figure}
 
+A lock-in amplifier was used so undesirable noise such as light from the environment and drift from the photodiode, can be removed from the signal. The output of the photodiode was connected to a band pass filter with a center frequency of 400 kHz and a Q of 20. This extracted the first harmonic of the square wave, a 400 kHz sine wave. The output of of the filter was connected to a lock-in amplifier of gain 5. The reference signal for the lock-in amplifier was a 400 kHz sine wave with the same phase as the square wave driving the laser. It was generated by the same function generator for the square wave. The voltage output signal from the lock-in was measured by a Keithley 2100 Digital Multimeter.
+
+Voltage readings from the multimeter were recorded onto the computer using LabView program (Keithley DC Incremental Write.vi). Each recorded voltage was an average of 16 measurements. We took two types of measurements, so the Verdet constant can be calculated in two ways.  The first method recorded the voltages as the polarizer was rotated in increments of 5\degree. We used this method with magnetic field values of -10.6 mT, 0 mT, 15.9 mT, and 21.2 mT. The negative field was generated by reversing the connection of the two leads of the power supply to the solenoid. The second method set the polarizer at an angle of $\theta = 45\degree$. The voltages at field values of $-31.8$--$31.8$ mT, in increments of $5.3$ mT were measured.
+}
 
 
 \section{Results}
-{Data recorded by LabView was fed into a data analysis program called Igor Pro.  A sinusoidal fit was performed on each dataset. corresponding to a magnetic field.  We excluded two point in the curve fit for the B=0 dataset, which corresponded to values we accidentally recorded twice. 
-We noticed something that, present in all data sets, the experimental measurements of voltage for angle settings of 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit, resulting in our experimental curve to be shifted from the fit.  After the 340\degree mark, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In our Discussion section, we discuss possible causes for this systematic error.  In order to eliminate it as much as possible, we masked the values corresponding to angles of 305\degree--340\degree(305\degree--330\degree) were masked from the curve fits as well for datasets with a nonzero magnetic field (no magnetic field).}
+{Figs.~\ref{nofield}--\ref{maxfield} show the voltages plotted against the polarizer angle for different magnetic field. Fig.~\ref{method1pic} shows the voltages measured at an angle of $\theta=45\degree$ for different magnetic fields.
+\begin{figure}[h]
+\includegraphics[width = 5.8in]{0A.pdf}
+\caption{\label{nofield}Photodiode voltage measured for no magnetic field.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width = 5.8in]{n1A.pdf}
+\caption{\label{neg}Photodiode voltage measured for a magnetic field of -10.6 mT.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width = 5.8in]{15A.pdf}
+\caption{\label{onehalf}Photodiode voltage measured for a magnetic field of 15.9 mT.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width = 5.8in]{2A.pdf}
+\caption{\label{maxfield}Photodiode voltage measured for a magnetic field of 21.2 mT.}
+\end{figure}
+}
 
 
 \section{Analysis}
-{\subsection{Method 1}
+A cosine-squared fit was performed on each our voltage measurements corresponding to a different a magnetic field. The curve fits are shown in Figs.~\ref{nofield}--\ref{maxfield}.  One point in the curve fit for the B=0 dataset was excluded from the curve fit because we measured the voltage twice for one angle. In all data sets, the experimental measurements of voltage for polarizer angles around 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit. After a polarizer angle of 340\degree, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In the Discussion section, we discuss possible causes for this systematic error. We masked the values corresponding to angles of 305\degree--340\degree\ (305\degree--330\degree) were masked from the curve fits as well for datasets with a nonzero magnetic field (no magnetic field) so they would not skew our calculation of the Verdet constant.
+
+Our dominant source of error in these measurements is from setting the polarizer at the correct angle. We were able to set the polarizer within $1\degree$ of the desired angle. This error in the polarizer angle was propagated to an error in the voltage. We neglected voltage error from the multimeter as it was many magnitudes smaller than the error due to the angle.
+
+The results of the curve fits are listed in Table~\ref{shift table}. We plotted $\Delta \phi$ agains $\Delta B$ in Fig.~\ref{method1pic}. A linear fit was performed to to obtain $\Delta \phi/\Delta B$. The Verdet constant was calculated using Eq.~(\ref{vconst}), which can be arranged to become
+\begin{equation}
+V_c =\frac{1}{L} \frac{\Delta \phi}{\Delta B}.
+\end{equation}
+
+{\subsection{Method 2}
 
 {We calculated $V_{c}$ using 
 \begin{equation}
@@ -73,7 +103,7 @@ $V=V_{0}\cos^2{\theta}$. Therefore,  $\left.\frac{\partial V}{\partial \theta}\r
 V_{c} =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta} 
 \end{equation}
 
-\subsection{Method 2}
+\subsection{Method 1}
 
 Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship \cite{expphysics}- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
 \begin{equation}
@@ -112,25 +142,8 @@ b.  We calculated the Verdet Constant using two different methods of calculation
 
 \end{thebibliography}
 
-\begin{figure}
-\includegraphics[width = 6.3in]{0A.pdf}
-\caption{\label{nofield}Photodiode voltage measured for no magnetic field.}
-\end{figure}
 
-\begin{figure}
-\includegraphics[width = 6.3in]{n1A.pdf}
-\caption{\label{neg}Photodiode voltage measured for a magnetic field of -10.6 mT.}
-\end{figure}
 
-\begin{figure}
-\includegraphics[width = 6.3in]{15A.pdf}
-\caption{\label{onehalf}Photodiode voltage measured for a magnetic field of 15.9 mT.}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width = 6.3in]{2A.pdf}
-\caption{\label{maxfield}Photodiode voltage measured for a magnetic field of 21.2 mT.}
-\end{figure}
 
 \begin{figure}[t]
 \includegraphics[width =6.3in]{verdetpic2.pdf}
