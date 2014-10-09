@@ -85,7 +85,7 @@ Voltage readings from the multimeter were recorded onto the computer using LabVi
 
 \section{Analysis}
 {\subsection{Measurement of Photodiode Voltage for Various Polarizer Angles}
-A cosine-squared fit was performed on each our voltage measurements corresponding to a different a magnetic field. The curve fits are shown in Figs.~\ref{nofield}--\ref{maxfield}.  One point in the curve fit for the B=0 dataset was excluded from the curve fit because we measured the voltage twice for one angle. In all data sets, the experimental measurements of voltage for polarizer angles around 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit. After a polarizer angle of 340\degree, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In the Discussion section, we discuss possible causes for this systematic error. We masked the values corresponding to angles of 305\degree--340\degree\ (305\degree--330\degree) were masked from the curve fits as well for datasets with a nonzero magnetic field (no magnetic field) so they would not skew our calculation of the Verdet constant.
+{A cosine-squared fit was performed on each our voltage measurements corresponding to a different a magnetic field. The curve fits are shown in Figs.~\ref{nofield}--\ref{maxfield}.  One point in the curve fit for the B=0 dataset was excluded from the curve fit because we measured the voltage twice for one angle. In all data sets, the experimental measurements of voltage for polarizer angles around 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit. After a polarizer angle of 340\degree, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In the Discussion section, we discuss possible causes for this systematic error. We masked the values corresponding to angles of 305\degree--340\degree\ (305\degree--330\degree) were masked from the curve fits as well for datasets with a nonzero magnetic field (no magnetic field) so they would not skew our calculation of the Verdet constant.
 
 Our dominant source of error in these measurements is from setting the polarizer at the correct angle. We were able to set the polarizer within $1\degree$ of the desired angle. This error in the polarizer angle was propagated to an error in the voltage. We neglected voltage error from the multimeter as it was many magnitudes smaller than the error due to the angle.
 
@@ -101,9 +101,7 @@ The results of the curve fits are listed in Table~\ref{shift table}. We plotted 
         \end{tabular}
     \end{ruledtabular}
 \caption{\label{shift table}The shift in polarization due to a change in the magnetic field was found from a sinusoidal fit. The reduced $\chi^2$ is a measure of the goodness of fit.}
-\end{table}
-
-
+\end{table}}
 
 {We calculated $V_{c}$ using 
 \begin{equation}
@@ -115,6 +113,10 @@ $V=V_{0}\cos^2{\theta}$. Therefore,  $\left.\frac{\partial V}{\partial \theta}\r
 V_{c} =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta} 
 \end{equation}
 
+\begin{figure}
+\includegraphics[width =6.3in]{verdet1.pdf}
+\caption{\label{method2pic} The relative polarization shift for various magnetic fields. A linear was used to determine $\Delta \phi/\Delta B$.}
+\end{figure}
 \subsection{Measurement of Voltage at $\theta = 45\degree$ for Various B}
 
 Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship \cite{expphysics}- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
@@ -162,9 +164,6 @@ b.  We calculated the Verdet Constant using two different methods of calculation
 \caption{\label{method1pic} The measured change in photodiode voltage for a change in the magnetic field at a polarizer angle 45\degree\  from the maximum voltage output. A linear fit was used to determine $\Delta V/\Delta B$.}
 \end{figure}
 
-\begin{figure}[b]
-\includegraphics[width =6.3in]{verdetpic1.pdf}
-\caption{\label{method2pic} The relative polarization shift for various magnetic fields. A linear was used to determine $\Delta \phi/\Delta B$.}
-\end{figure}
+
 
 \end{document}
