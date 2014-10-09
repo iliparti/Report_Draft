@@ -4,6 +4,7 @@
 \usepackage{amsfonts} 
 \usepackage{graphicx} 
 \usepackage{gensymb}
+\usepackage{csvsimple}
 
 \begin{document}
 
@@ -20,6 +21,7 @@
 
 \begin{abstract}
 {We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. The Verdet constant relates the change in the magnetic field to a change in the polarization.  Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. A lock-in amplifier was used on the photodiode output to reduce noise from background light and DC drift from the photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$ and $19.88 \pm 0.11 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m} $from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet Constant being too low from the second method.
+
 }
 \end{abstract}
 
@@ -29,7 +31,7 @@
 
 b.  To calculate the Verdet constant relating the change in polarization angle to the change in magnetic field.}
 \begin{equation}
-\Delta \phi =V_{c} \Delta B L{_{sample}}
+\Delta \phi =V_{c}\hspace{1.5pt} \Delta B\hspace{1pt}\textrm{L}{_{\textrm{sample}}}
 \end{equation}
 
 \section{Introduction} 
@@ -37,22 +39,9 @@ b.  To calculate the Verdet constant relating the change in polarization angle t
 {The Faraday Effect is a magneto-optical phenomenon in which light of a single wavelength, traveling through certain materials subject to a magnetic field, experiences a shift in the plane of polarization. These materials, called birefringent, have different refractive indices for the right and left circular polarizations of light. As light travels through the material, the relative phase angle between the two polarizations changes, rotating the overall polarization plane.
 
 As shown in Equation 1, the Verdet Constant ($V_{c}$) relates the change in magnetic field of a medium to the change in polarization angle of the traveling light.  $V_{c}$ is specific to any medium.  There are two ways in which we can calculate $V_{c}$.  By Malus's Law, $I(\theta)$=$I_{0}*\cos^{2}(\theta)$, where $I$ is the intensity of measured light through a polarization filter of angle $\theta$ with respect to the maximal polarization angle.  Similarly, for voltage output, $V(\theta)$=$V_{0}*\cos^{2}(\theta)$.  Once we add into this set-up a magnetic field through which the light can travel, we will observe the voltage output equation to have a phase shift, $\theta$:  $V(\theta)$=$V_{0}*\cos^{2}(\theta+\phi)$.
+}
 
-\subsection{Method 1}
 
-{One way to find $V_{c}$ is to notice that $\frac{\partial \theta}{\partial B}=\frac{\partial V}{\partial B}/ \frac{\partial V}{\partial \theta}$.     $V=V_{0}*\cos(\theta)^{2}$.  Therefore,  $ \frac{\partial V}{\partial \theta} = V_{0}*\sin(2*\theta)$, or $V_{0}$, the amplitude of our voltage vs. angle plots, if $\theta$ is 45$\degree$.  $\frac{\partial V}{\partial B}$ can be found by plotting V(45$\degree$) against varying values of B. }
-
-\begin{equation}
-V_{c} =\frac{1}{L} * \frac{\partial V}{\partial B} /  \frac{\partial V}{\partial \theta} 
-\end{equation}
-
-\subsection{Method 2}
-
-Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.}
-
-\begin{equation}
-V_{c} =\frac{1}{L} * \frac{\partial \theta}{\partial B} 
-\end{equation}
 
 
 
@@ -68,8 +57,9 @@ Voltage readings from the multimeter were recorded onto the computer by LabView 
 
 
 \section{Results}
-{Data recorded by LabView was fed into a data analysis program called Igor.Pro.  A sinusoidal fit was determined for each separate dataset corresponding to a different current value.  We excluded two points in the curve fit for the B=0 dataset, which corresponded to values we accidentally recorded twice. 
-We noticed something that, present in all data sets, the experimental measurements of voltage for angle settings of 305\degree--330\degree were systematically higher than the values predicted by the sinusoidal curve fit, resulting in our experimental curve to be shifted from the fit.  After the 330\degree mark, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In our Discussion section, we discuss possible causes for this systematic error.  In order to eliminate it as much as possible, we masked the values corresponding to angles of 305\degree--330\degree were masked from the curve fits as well for all datasets.
+{Data recorded by LabView was fed into a data analysis program called Igor Pro.  A sinusoidal fit was determined for each separate dataset corresponding to a different current value.  We excluded two points in the curve fit for the B=0 dataset, which corresponded to values we accidentally recorded twice. 
+We noticed something that, present in all data sets, the experimental measurements of voltage for angle settings of 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit, resulting in our experimental curve to be shifted from the fit.  After the 340\degree mark, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In our Discussion section, we discuss possible causes for this systematic error.  In order to eliminate it as much as possible, we masked the values corresponding to angles of 305\degree--340\degree were masked from the curve fits as well for all datasets.
+
 \begin{figure}
 \includegraphics[width = 6.3in]{0A.pdf}
 \caption{\label{nofield}Voltage measurements }
@@ -77,13 +67,41 @@ We noticed something that, present in all data sets, the experimental measuremen
 \end{figure}
 
 \begin{figure}[b]
-\includegraphics[width =6.3in]{change_in_voltage_for_different_b_fields_at_45_from_max.pdf}
+\includegraphics[width =6.3in]{verdetpic2.pdf}
 \caption{\label{method2pic} The measured change in photodiode voltage for a change in the magnetic field at a polarizer angle 45\degree\  from the maximum voltage output. A linear fit was used to determine $\Delta V/\Delta B$.}
 \end{figure}
 }
+
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+$\Delta$ B (mT) & Error $\Delta$B (mT)& $\Delta \phi$ (rad) & Error $\Delta\phi$ ($10^{-5}$ rad) & Reduced $\chi^2$ \\  \hline
+-10.6 & 0.05 & -0.022691 & 187 & 0.76 \\
+0     & 0.05 & -4.77$\cdot10^{-5}$ & 218 & 0.74 \\
+15.9  & 0.05 & 0.024996  & 219 & 0.50 \\
+21.2  & 0.05 & 0.035233  & 184 & 1.17
+\end{tabular}
+\end{ruledtabular}
+
+
 \section{Analysis}
+{\subsection{Method 1}
+
+{One way to find $V_{c}$ is to notice that $\frac{\partial \theta}{\partial B}=\frac{\partial V}{\partial B}/ \frac{\partial V}{\partial \theta}$.     $V=V_{0}*\cos(\theta)^{2}$.  Therefore,  $ \frac{\partial V}{\partial \theta} = V_{0}*\sin(2*\theta)$, or $V_{0}$, the amplitude of our voltage vs. angle plots, if $\theta$ is 45$\degree$.  $\frac{\partial V}{\partial B}$ can be found by plotting V(45$\degree$) against varying values of B. }
+
+\begin{equation}
+V_{c} =\frac{1}{L} * \frac{\partial V}{\partial B} /  \frac{\partial V}{\partial \theta} 
+\end{equation}
+
+\subsection{Method 2}
+
+Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  $\theta$ can be plotted against $B$- they should have a linear relationship- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
+\begin{equation}
+V_{c} =\frac{1}{L} * \frac{\partial \theta}{\partial B} 
+\end{equation}
+
 {We first calculated the Verdet Constant using the procedure detailed in Method 1.  We measured the value of V for multiple values of B generated by varying the current output I (-3.0 A to 3.0 A with increments of .5 A).  We plotted V vs B and found the slope of the curve and thus $\frac{\partial V}{\partial B}$ to be .013.  $\frac{\partial V}{\partial \theta}$, or $V_{0}$ at 45 $\degree$ was estimated to be (VALUE).  Error was taken to be 1 degree in setting the rotator to 45 $\degree$.  Applying Equation 2, we find the Verdet Constant to be $19.88 \pm 1.2 \mathrm{~rad/T} \cdot \textrm{m}$. (INSERT PLOT AT IMAGE).
 {We then calculated the Verdet Constant using Method 2, which required we refer to the phase shifts from the four graphs of voltage vs angle set on the polarizer.  Using Igor.Pro, we generated a sinusoidal fit for the dataset of voltage vs. polarizer angle for all the B field settings.  Subtracting the fit for the zero B field setting from all the other fits, we were able to find the phase offset between the zero B field case and the three non-zero B field cases.  We generated a plot of voltage vs phase offset.  $\bf (Table)$.  The error in our curve-fitting program's calculation of the phase offset was used as the error in the offset.  The slope, and thus $\frac{\partial \theta}{\partial B}$ was measured to be .00179 $\pm$ .0000735 radians.  Applying Equation 3, we find that the Verdet Constant is $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$
+
 
 \section{Discussion}
 
