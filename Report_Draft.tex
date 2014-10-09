@@ -101,8 +101,14 @@ The results of the curve fits are listed in Table~\ref{shift table}. We plotted 
         \end{tabular}
     \end{ruledtabular}
 \caption{\label{shift table}The shift in polarization due to a change in the magnetic field was found from a sinusoidal fit. The reduced $\chi^2$ is a measure of the goodness of fit.}
-\end{table}}
+\end{table}
+\begin{equation}
+V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B} 
+\end{equation}
+}
 
+
+\subsection{Measurement of Voltage at $\theta = 45\degree$ for Various B}
 {We calculated $V_{c}$ using 
 \begin{equation}
 \left. \frac{\partial V}{\partial B}=\frac{\partial V}{\partial \theta} \frac{\partial \theta}{\partial B}\right|_{\theta=45\degree}.
@@ -117,12 +123,6 @@ V_{c} =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta}
 \includegraphics[width =6.3in]{verdet1.pdf}
 \caption{\label{method2pic} The relative polarization shift for various magnetic fields. A linear was used to determine $\Delta \phi/\Delta B$.}
 \end{figure}
-\subsection{Measurement of Voltage at $\theta = 45\degree$ for Various B}
-
-Another way to calculate $V_{c}$ is to measure the phase shift, $\phi$ for multiple magnetic fields:  collecting data for $V(\theta)$ for a full 0-360 degree range of $\theta$ and comparing data for different magnetic fields to a base data set of the same set up, where there is no magnetic field.  The error in our curve-fitting program's calculation of the phase offset was used as the error in the offset.  $\theta$ can be plotted against $B$- they should have a linear relationship \cite{expphysics}- and by finding the slope of that linear fit, $\frac{\partial \theta}{\partial B}$ will be found and thus $V_{c}$ by Equation 1. We thus have another way to find the Verdet Constant.
-\begin{equation}
-V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B} 
-\end{equation}
 
 \section{Discussion}
 
