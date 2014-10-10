@@ -89,7 +89,11 @@ Voltage readings from the multimeter were recorded onto the computer using LabVi
 
 Our dominant source of error in these measurements is from setting the polarizer at the correct angle. We were able to set the polarizer within $1\degree$ of the desired angle. This error in the polarizer angle was propagated to an error in the voltage. We neglected voltage error from the multimeter as it was many magnitudes smaller than the error due to the angle.
 
-The results of the curve fits are listed in Table~\ref{shift table}. We plotted $\Delta \phi$ agains $\Delta B$ in Fig.~\ref{method1pic}. A linear fit was performed to to obtain $\Delta \phi/\Delta B=1.79 \pm 0.07\textrm{~rad/T}$. The Verdet constant was calculated by rearranging Eq.~(\ref{vconst}). We calculated $V_c$ to be $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$.
+The results of the curve fits are listed in Table~\ref{shift table}. We plotted $\Delta \phi$ agains $\Delta B$ in Fig.~\ref{method1pic}. A linear fit was performed to to obtain $\Delta \phi/\Delta B=1.79 \pm 0.07\textrm{~rad/T}$. The Verdet constant was calculated by rearranging Eq.~(\ref{vconst}) to
+\begin{equation}
+V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B}. 
+\end{equation}
+We calculated $V_c$ to be $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$.
 \begin{table}
     \begin{ruledtabular}
         \begin{tabular}{ccccc}
@@ -102,9 +106,7 @@ The results of the curve fits are listed in Table~\ref{shift table}. We plotted 
     \end{ruledtabular}
 \caption{\label{shift table}The shift in polarization due to a change in the magnetic field was found from a sinusoidal fit. The reduced $\chi^2$ is a measure of the goodness of fit.}
 \end{table}
-\begin{equation}
-V_{c} =\frac{1}{L} \frac{\partial \theta}{\partial B} 
-\end{equation}
+
 }
 
 
