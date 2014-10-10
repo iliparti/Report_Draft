@@ -20,7 +20,7 @@
 \date{\today}
 
 \begin{abstract}
-{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.88 \pm 1.20 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$ from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
+{We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$ from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
 
 }
 \end{abstract}
@@ -123,13 +123,13 @@ We calculated $V_c$ to be $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$.
 \left. \frac{\partial V}{\partial B}=\frac{\partial V}{\partial \theta} \frac{\partial \theta}{\partial B}\right|_{\theta=45\degree}.
 \end{equation}
 Recall that $I=I_{0}\cos^2{\theta}$. Since the voltage from the photodiode is proportional to $I$, $V=V_{0}\cos^2{\theta}$. At $\theta = 45\degree$, $\frac{\partial V}{\partial \theta}=V_0$. 
-We performed a linear fit of our data in Fig.~\ref{method1pic} and found $\frac{\partial V}{\partial B}=0.0028\pm 0.0006 \textrm{~V/T}$. We used $V_0=6.?$ obtained from the curve fit on the data set for no magnetic field. The source of error for this method are error in setting the polarizer at $\theta=45\degree$, which leads to an error in $\frac{\partial V}{\partial \theta}$ of ???.
+We performed a linear fit of our data in Fig.~\ref{method1pic} and found $\frac{\partial V}{\partial B}=0.0028\pm 0.0006 \textrm{~V/T}$. We used $V_0=6.405$ obtained from the curve fit on the data set for no magnetic field. The source of error for this method are error in setting the polarizer at $\theta=45\degree$, which leads to an error in $\frac{\partial V}{\partial \theta}$ of $0.04\textrm{~V/rad}$. We ignored the error in $V_0$ from the curve fit because it was much smaller than the error due to the angle.
 From Eq.~(\ref{vconst}) and Eq.~(\ref{partial}), we get
 \begin{equation}
 \label{2}
 V_{c} =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta} 
 \end{equation}
-Using  Eq.~(\ref{2}), we obtained a value of $19.88 \pm 1.2 \mathrm{~rad/T} \cdot \textrm{m}$ for the Verdet constant. 
+Using  Eq.~(\ref{2}), we obtained a value of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ for the Verdet constant. 
 
 \begin{figure}
 \includegraphics[width =6.3in]{verdet1.pdf}
@@ -142,12 +142,12 @@ Using  Eq.~(\ref{2}), we obtained a value of $19.88 \pm 1.2 \mathrm{~rad/T} \cdo
 
 We now explore possible causes of this systematic error.  Angle values in the 305\degree--340\degree range were more difficult to set on the Faraday Rotator as they were partially obstructed by the solenoid.  Using the human eye to set these values and attempting to look beyond the solenoid may have resulted in a systematic error in the angle setting due to parallax.  What looked like 305\degree might have actually been 303\degree--307\degree due to this parallax effect.  (~another reason?~).  We masked data values in this range in order to eliminate data values rendered invalid due to systematic error but perhaps we might have included several points which appeared fine but were also subject to systematic error.  Perhaps we should have thrown out all points beyond the 305 \degree mark as they might have all been intrinsically shifted from the sinusoidal curve they should have followed.  Including incorrect data points in the fit which generated our phase offset which was critical for the calculation in Method 1 would have resulted in a systematically incorrect offset and thus incorrect value for the Verdet Constant.
 
-Using Method 2, our colleagues found the $V_{c}$ to be between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$.  Our $V_{c}$ using Method 2, $19.88 \pm 1.2 \mathrm{~rad/T} \cdot \textrm{m}$ is thus in good agreement with the values of our fellow researchers as it falls within that range, within error. Method 2 involved parameters which did not depend on the accuracy of the phase offset and sinusoidal fit and thus our systematic error did not affect the calculations from Method 2.  Our Verdet constant from Method 2 is thus the one to be reported as accurate.  It was in agreement with the values reported by our colleagues, as mentioned earlier.}
+Using Method 2, our colleagues found the $V_{c}$ to be between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$.  Our $V_{c}$ using Method 2, $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ is thus in good agreement with the values of our fellow researchers as it falls within that range, within error. Method 2 involved parameters which did not depend on the accuracy of the phase offset and sinusoidal fit and thus our systematic error did not affect the calculations from Method 2.  Our Verdet constant from Method 2 is thus the one to be reported as accurate.  It was in agreement with the values reported by our colleagues, as mentioned earlier.}
 
 \section{Conclusion}
 {\begin{enumerate}[(a)]
 \item We were able to demonstrate Faraday Rotation for 3 different values of magnetic field.  As can be seen from the graphs, each plot of rotation angle vs. voltage has a different offset from the graph of rotation angle vs. voltage for a zero-field case.  We can conclude that the overall plane of polarization for incident light has been rotated due to its travel through a magnetic field.
-\item We calculated the Verdet Constant using two different methods of calculation.  The first method gave us a constant of $19.88 \pm 1.2 \mathrm{~rad/T} \cdot \textrm{m}$, which is in good agreement with the values our colleagues calculated.  The second method was likely affected by a systematic error in our data recording and ended up being $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$, not within agreement of the values calculated by our colleagues.
+\item We calculated the Verdet Constant using two different methods of calculation.  The first method gave us a constant of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$, which is in good agreement with the values our colleagues calculated.  The second method was likely affected by a systematic error in our data recording and ended up being $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$, not within agreement of the values calculated by our colleagues.
 \end{enumerate}}
 
 \section{References}
