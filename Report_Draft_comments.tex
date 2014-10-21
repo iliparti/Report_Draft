@@ -5,6 +5,8 @@
 \usepackage{graphicx} 
 \usepackage{gensymb}
 \usepackage{enumerate}
+\usepackage{color}
+\usepackage{ulem}
 
 \begin{document}
 
@@ -21,6 +23,16 @@
 
 \begin{abstract}
 {We observed the Faraday effect, a shift in the polarization of light as it passes through medium subject to a magnetic field. Polarized light from a 650 nm laser was sent through a SF-59 glass rod surrounded by a solenoid. The light then passed through an rotatable polarizer and was detected by a photodiode. We calculated the Verdet constant for the rod by varying the magnetic fields and measuring the relative polarization shift and the voltage shift at a particular polarizer angle. From two separate calculations, we found a Verdet constant of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ and $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$. Other colleagues performing the experiment found the Verdet constant to be between 19 and 23$\mathrm{~rad/T} \cdot \textrm{m}$ from using the first method and between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$ from using the second method.  In our paper, we address a possible systematic error that lead to our Verdet constant being too low from the second method.
+
+{\color{blue} Comments on Abstract:
+\begin{enumerate}
+  \item  You should decide on whether you want to call it the \textcolor{magenta}{Faraday Effect} or the  \textcolor{magenta}{Faraday Rotation}, or if you want to use both terms, and define faraday rotation in terms of the faraday effect.   
+  \item The relative roles of the rotatable polarizer, solenoid, and rod of birefringent glass aren't clear here. Add a sentence  or two describing how you used a second polarizer to determine the angle of polarization (or relative angle of polarization, or shift in polarization) of the light from the change in light intensity after it passed through the material.
+  \item Need a sentence or two explaining (1) how you detected the relative intensity of the polarized light by measuring the current output from a photodiode (or more specifically, the voltage drop across a 1 Kohm resistor in series with the photodiode) and (2) that the voltage output was proportional to the light intensity (as verified by experiment), and that (3) unwanted voltage offsets and fluctuations in measured light intensity with changes in room lighting were eliminated using by (square-wave) modulation of the laser output and phase-sensistive detection of the transmitted light at the modulation frequency (lock-in amplifier) or some similar language 
+  \item You've explained what you varied to ultimately calculate a verdet coefficient, but you haven't explained what it is (!) nor have  you given a clear reason why your would measure it. I assume it is because the Verdet constant characterizes the degree of rotation (or strength of the Faraday effect) for a particular material \textbf{for a particular wavelength of light}. Thinking about what the Verdet constant tells you should help you with your description.  By the way, this so-called constant actually depends on the frequency of light passing through the material. 
+  \item Your description of the two experiments as two different calculations is misleading. It suggests that you found 2 + 3 by two different calculational methods and came up with two different results! More accurately, you used two different \textit{experimental} methods.  To improve the clarity of your description, I suggest distinguishing between what you varied, what you measured, and what you calculated. For example, in the first of your two experiments, you didn't measure the phase shift in an intensity versus angle plot, you measured the sinusoidal variation of polarized light intensity as a function of polarizer angle for a series of magnetic fields ranging from -x tesla to +y tesla, and from that you determined the magnetic-field-dependent phase shift in polarization (or, if you prefer, the magnetic-field dependent change in polarization angle) upon passage through the glass.  
+  \end{enumerate}
+ }
 
 }
 \end{abstract}
