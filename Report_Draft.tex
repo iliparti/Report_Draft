@@ -91,9 +91,6 @@ Voltage readings from the multimeter were recorded onto the computer using LabVi
 
 
 \section{Results and Analysis}
-{ Fig.~\ref{method2pic} shows the voltages measured at an angle of $\theta=45\degree$ for different magnetic fields. 
-}
-
 {\subsection{Method 1: Measurement of Photodiode Voltage for Various Polarizer Angles}
 {Figs.~\ref{nofield}--\ref{maxfield} show the measured voltages as a function of the polarizer angle for different magnetic fields. 
 The cosine-squared fits we performed are also shown on the plots and the results of the curve fits are listed in Table~\ref{shift table}.
@@ -103,12 +100,12 @@ The cosine-squared fits we performed are also shown on the plots and the results
 \caption{\label{nofield}Photodiode voltage measured for no magnetic field.}
 \end{figure}
 
-One point in the curve fit for the $B=0$ dataset was excluded from the curve fit because we measured the voltage twice for one angle. In all data sets, the experimental measurements of voltage for polarizer angles around 305\degree--340\degree were systematically higher than the values predicted by the sinusoidal curve fit. 
-After a polarizer angle of 340\degree, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In the Discussion section, we discuss possible causes for this systematic error. 
-We masked the values corresponding to angles of 305\degree--340\degree\  from the curve fits as well from datasets with a nonzero magnetic field so they would not skew our calculation of the Verdet constant.
+One point in the curve fit for the $B=0$ dataset was excluded from the curve fit because we measured the voltage twice for one angle. In all data sets, the experimental measurements of voltage for polarizer angles around $305\degree$--$340\degree$ were systematically higher than the values predicted by the sinusoidal curve fit. 
+After a polarizer angle of $340\degree$, we noticed that our experimental data values began to agree once again with the sinusoidal fit.  In the Discussion section, we discuss possible causes for this systematic error. 
+We masked the values corresponding to angles of $305\degree$--$340\degree$ from the curve fits as well from datasets with a nonzero magnetic field so they would not skew our calculation of the Verdet constant.
 Our dominant source of error in these measurements is from setting the polarizer at the correct angle. We were able to set the polarizer within $1\degree$ of the desired angle. 
 This error in the polarizer angle was propagated to an error in the voltage. We neglected voltage reading error from the multimeter as it was many magnitudes smaller than the error due to the angle setting.
-We plotted $\Delta \phi$ agains $\Delta B$ in Fig.~\ref{method1pic}. A linear fit was performed to to obtain $\Delta \phi/\Delta B=1.79 \pm 0.07\textrm{~rad/T}$. The Verdet constant was calculated by rearranging Eq.~(1) to
+We plotted $\Delta \phi$ agains $\Delta B$ in Fig.~\ref{method1pic}. A linear fit was performed to to obtain $\Delta \phi/\Delta B=1.79 \pm 0.07\textrm{~rad/T}$. The Verdet constant was calculated by rearranging Eq.~(\ref{vconst}) to
 \begin{equation}
 v_c =\frac{1}{L} \frac{\Delta \theta}{\Delta B}. 
 \end{equation}
@@ -142,45 +139,44 @@ We calculated $v_c$ to be $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$.
 \end{figure}
 }
 
-
+\newpage
 \subsection{Method 2: Measurement of Voltage at $\theta = 45\degree$ for Various B}
+{Fig.~\ref{method2pic} shows the voltages measured at an angle of $\theta=45\degree$ for different magnetic fields. 
 \begin{figure}
 \includegraphics[width =6.3in]{verdetpic2.pdf}
-\caption{\label{method2pic} The measured change in photodiode voltage for a change in the magnetic field at a polarizer angle 45\degree\  from the maximum voltage output. A linear fit was used to determine $\Delta V/\Delta B$.}
+\caption{\label{method2pic} The measured change in photodiode voltage for a change in the magnetic field at a polarizer angle 45\degree\  from the maximum voltage output. A linear fit was used to determine $\Delta V/\Delta B$. The error in our measurements are smaller than the size of our data points.}
 \end{figure}
-{We calculated $v_c$ using 
+We calculated $v_c$ using 
 \begin{equation}
 \label{partial}
 \left. \frac{\partial V}{\partial B}=\frac{\partial V}{\partial \theta} \frac{\partial \theta}{\partial B}\right|_{\theta=45\degree}.
 \end{equation}
 Recall that $I=I_{0}\cos^2{\theta}$. Since the voltage from the photodiode is proportional to $I$, $V=V_{0}\cos^2{\theta}$. At $\theta = 45\degree$, $\frac{\partial V}{\partial \theta}=V_0$. 
-We performed a linear fit of our data in Fig.~\ref{method1pic} and found $\frac{\partial V}{\partial B}=0.0028\pm 0.0006 \textrm{~V/T}$. We used $V_0=6.405$ obtained from the curve fit on the data set for no magnetic field. 
-The source of error for this method are error in setting the polarizer at $\theta=45\degree$, which leads to an error in $\frac{\partial V}{\partial \theta}$ of $0.04\textrm{~V/rad}$. 
+We performed a linear fit of our data in Fig.~\ref{method1pic} and found $\frac{\partial V}{\partial B}=0.0028\pm 0.0006 \textrm{~V/T}$. We used $V_0=6.405$ V obtained from the curve fit on the data set for no magnetic field. 
+The source of error for this method are error in setting the polarizer at $\theta=45\degree$. We believe our error in setting the polarizer angle was one degree, which leads to an error in $\frac{\partial V}{\partial \theta}$ of $0.04\textrm{~V/rad}$. 
 We ignored the error in $V_0$ from the curve fit because it was much smaller than the error due to the angle.
 From Eq.~(\ref{vconst}) and Eq.~(\ref{partial}), we get
 \begin{equation}
 \label{2}
 v_c =\frac{1}{L}  \frac{\partial V/\partial B}{\partial V/\partial \theta} 
 \end{equation}
-Using  Eq.~(\ref{2}), we obtained a value of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ for the Verdet constant. 
+Using  Eq.~(\ref{2}), we obtained a value of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ for the Verdet constant. }
 
-
-}
 \section{Discussion}
 
-{We compared our values for the Verdet Constant with those found by colleagues performing the same experiment.  
+{We compared our values for the Verdet constant with those found by colleagues performing the same experiment.  
 With Method 1, our colleagues found the value of the $v_c$ to be between 19 and 23 $\mathrm{~rad/T} \cdot \textrm{m}$.  Our value of $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$ is within this range for two standard deviations.  
 Still, we consider systematic errors present in our data which would have generated an inaccurate value using Method 1.  The most likely parameter which went into Equation 3 that could exhibit a systematic error is our calculation of $\partial \theta/\partial B$. 
- It is possible a systematic error was present in our measurement of the phase shift offset.  We remarked earlier that the 305$\degree$--340$\degree$ regions of all four of our datasets were offset from the sinusoidal fit, due to what appears to be a systematic error in data collection.  
+ It is possible a systematic error was present in our measurement of the phase shift offset.  We remarked earlier that the $305\degree$--$340\degree$ regions of all four of our datasets were offset from the sinusoidal fit, due to what appears to be a systematic error in data collection.  
  In order to rectify this error, we had excluded those points from our curve fit. 
 
-We now explore possible causes of this systematic error.  Angle values in the 305\degree--340\degree range were more difficult to set on the Faraday Rotator as they were partially obstructed by the solenoid.  
-Using the human eye to set these values and attempting to look beyond the solenoid may have resulted in a systematic error in the angle setting due to parallax.  What looked like 305\degree might have actually been 303\degree--307\degree due to this parallax effect. 
-We have also considered the possibility that our Faraday Rotator was defective around the problematic values.  
+We now explore possible causes of this systematic error.  Angle values in the $305\degree$--$340\degree$ range were more difficult to set on the polarizer as they were partially obstructed by the solenoid.  
+Using the human eye to set these values and attempting to look beyond the solenoid may have resulted in a systematic error in the angle setting due to parallax.  What looked like $305\degree$ might have actually been $303\degree$--$307\degree$ due to this parallax effect. 
+We have also considered the possibility that our polarizer was defective around the problematic values.  
 Perhaps the angle markings on the device were improperly applied in the factory and what should have been a certain angle was not actually that angle.  
-In order to confirm this, we would need to check the angle settings on the rotator with a very precise protractor.  
+In order to confirm this, we would need to check the angle settings on the polarizer with a very precise protractor.  
 We masked data values in this range in order to eliminate data values rendered invalid due to systematic error but perhaps we might have included several points which appeared fine but were also subject to systematic error.  
-Perhaps we should have thrown out all points beyond the 305$\degree$ mark as they might have all been intrinsically shifted from the sinusoidal curve they should have followed.  Including incorrect data points in the fit which generated our phase offset which was critical for the calculation in Method 1 would have resulted in an incorrect offset and thus incorrect value for the Verdet Constant.
+Perhaps we should have thrown out all points beyond the $305\degree$ mark as they might have all been intrinsically shifted from the sinusoidal curve they should have followed.  Including incorrect data points in the fit which generated our phase offset which was critical for the calculation in Method 1 would have resulted in an incorrect offset and thus incorrect value for the Verdet constant.
 
 Using Method 2, our colleagues found the $v_c$ to be between 19 and 21$\mathrm{~rad/T} \cdot \textrm{m}$.  Our $v_c$ using Method 2, $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$ is thus in good agreement with the values of our fellow researchers as it falls within that range, within error. 
 Method 2 involved parameters which did not depend on the accuracy of the phase offset and sinusoidal fit and thus our systematic error did not affect the calculations from Method 2.  Our Verdet constant from Method 2 is thus the one to be reported as accurate.  
@@ -188,7 +184,7 @@ It was in agreement with the values reported by our colleagues, as mentioned ear
 
 \section{Conclusion}
 {\begin{enumerate}[(a)]
-\item We were able to demonstrate Faraday Rotation for 3 different values of magnetic field.  As can be seen from the graphs, each plot of rotation angle vs. voltage has a different offset from the graph of rotation angle vs. voltage for a zero-field case.  We can conclude that the overall plane of polarization for incident light has been rotated due to its travel through a magnetic field.
+\item We were able to see Faraday effect. We could   As can be seen from the graphs, each plot of rotation angle vs. voltage has a different offset from the graph of rotation angle vs. voltage for a zero-field case.  We can conclude that the overall plane of polarization for incident light has been rotated due to its travel through a magnetic field.
 \item We calculated the Verdet Constant using two different methods of calculation.  The first method gave us a constant of $19.9 \pm 1.0 \mathrm{~rad/T} \cdot \textrm{m}$, which is in good agreement with the values our colleagues calculated.  The second method was likely affected by a systematic error in our data recording and ended up being $17.54 \pm 1.12 \mathrm{~rad/T} \cdot \textrm{m}$, not within agreement of the values calculated by our colleagues.
 \end{enumerate}}
 
